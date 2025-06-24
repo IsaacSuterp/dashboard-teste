@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Profissional</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <i class="ph-fill ph-leaf"></i>
+                <span>Brand</span>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#"><i class="ph-fill ph-house"></i><span>Dashboard</span></a></li>
+                    <li><a href="#"><i class="ph-fill ph-chart-bar"></i><span>Charts</span></a></li>
+                    <li><a href="#"><i class="ph-fill ph-chart-line-up"></i><span>Statistick</span></a></li>
+                    <li><a href="#"><i class="ph-fill ph-calendar"></i><span>Calendar</span></a></li>
+                    <li><a href="#"><i class="ph-fill ph-file"></i><span>Sample Pages</span></a></li>
+                    <li><a href="#"><i class="ph-fill ph-chat-dots"></i><span>Messages</span></a></li>
+                    <li><a href="#"><i class="ph-fill ph-gear"></i><span>Settings</span></a></li>
+                    <li><a href="#"><i class="ph-fill ph-question"></i><span>Support</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="search-bar">
+                    <i class="ph ph-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-icons">
+                    <i class="ph ph-bell"></i>
+                    <i class="ph ph-gear-six"></i>
+                    <div class="user-profile">
+                        <span>John Smith</span>
+                        <div class="user-avatar"></div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="widgets-grid">
+                <div class="widget summary-card" style="--glow-color: #FFB900;">
+                    <div class="value">98,5%</div>
+                    <div class="title">LOREM IPSUM SIT</div>
+                    <i class="ph ph-chart-bar-horizontal"></i>
+                </div>
+                <div class="widget summary-card" style="--glow-color: #4A90E2;">
+                    <div class="value" data-target="2481">0</div>
+                    <div class="title">ADIPISCING ELIT</div>
+                    <i class="ph ph-users"></i>
+                </div>
+                <div class="widget summary-card" style="--glow-color: #50E3C2;">
+                    <div class="value" data-target="31124">0</div>
+                    <div class="title">SED DO EIUSMOD</div>
+                    <i class="ph ph-gear"></i>
+                </div>
+                <div class="widget summary-card" style="--glow-color: #D0021B;">
+                    <div class="value" data-target="2125">0</div>
+                    <div class="title">TEMPOR INCIDUNT</div>
+                    <i class="ph ph-shopping-cart"></i>
+                </div>
+
+                <div class="widget large-widget">
+                    <div class="widget-header">
+                        <h3>MINIM</h3>
+                        <div class="value-display" data-target="476">0</div>
+                    </div>
+                    <div class="waveform" id="waveform-minim">
+                        </div>
+                </div>
+
+                <div class="widget">
+                     <div class="widget-header">
+                        <h3>IPSUM</h3>
+                     </div>
+                     <div class="circular-gauges">
+                        <div class="gauge-container">
+                            <svg class="gauge-svg" viewBox="0 0 120 120">
+                                <circle class="gauge-bg" cx="60" cy="60" r="54"></circle>
+                                <circle class="gauge-fg" cx="60" cy="60" r="54" style="--progress: 0.68; --color: #E91E63;"></circle>
+                            </svg>
+                            <div class="gauge-text" data-target="68">0K</div>
+                        </div>
+                         <div class="gauge-container">
+                            <svg class="gauge-svg" viewBox="0 0 120 120">
+                                <circle class="gauge-bg" cx="60" cy="60" r="54"></circle>
+                                <circle class="gauge-fg" cx="60" cy="60" r="54" style="--progress: 0.33; --color: #50E3C2;"></circle>
+                            </svg>
+                            <div class="gauge-text" data-target="33">0K</div>
+                        </div>
+                     </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
